@@ -139,25 +139,7 @@ namespace Game_of_life
        
             for (int n = 0; n < 10; n++)
             {
-                for (int t = 0; t < 10; t++)
-                {
-                        if (consistences[n, t] == 1)
-                        {
-                            villagers[n, t] = null;
-                            Console.SetCursorPosition(n, t);
-                            Console.Write(" ");
-                            players--;
-                            neighbours = 0;
-                        }
-                    
-                        if (consistences[n, t] == 2)
-                        {
-                            villagers[n,t] = new Villager();
-                            Console.SetCursorPosition(n, t);
-                            Console.Write("@");
-                            players++;
-                            neighbours = 0;
-                        }   
+             
                 }
             }
             consistences = new int[10, 10];
